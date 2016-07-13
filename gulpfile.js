@@ -58,30 +58,30 @@ gulp.task("symbols", function() {
 });
 
 gulp.task("clean", function() {
-    return del("build");
+  return del("build");
 });
 
 gulp.task("copy", function() {
-    return gulp.src([
-        "fonts/**/*.{woff,woff2}",
-        "img/**",
-        "js/**",
-        "*.html"
-    ], {
-        base: "."
-    })
-        .pipe(gulp.dest("build"));
+  return gulp.src([
+    "fonts/**/*.{woff,woff2}",
+    "img/**",
+    "js/**",
+    "*.html"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("build", function(fn) {
-    run(
-        "clean",
-        "copy",
-        "style",
-        "images",
-        "symbols",
-        fn
-    );
+  run(
+    "clean",
+    "copy",
+    "style",
+    "images",
+    "symbols",
+    fn
+  );
 });
 
 gulp.task("serve", function() {
@@ -90,7 +90,7 @@ gulp.task("serve", function() {
     notify: false,
     open: true,
     ui: false
-});
+  });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
