@@ -1,3 +1,21 @@
-//body {
-//  background: red;
-//}
+@import "normalize/import-now";
+
+@import "variables";
+@import "mixins";
+
+@import "global/scaffolding";
+@import "global/fonts";
+
+@import "blocks/page-header";
+@import "blocks/page-header-logo";
+@import "blocks/main-nav";
+@import "blocks/advantages";
+@import "blocks/articles";
+@import "blocks/page-footer";
+@import "blocks/page-footer-social";
+@import "blocks/promo";
+@import "blocks/services";
+
+@import "blocks/wrapper";
+@import "blocks/slider";
+@import "blocks/btn";
