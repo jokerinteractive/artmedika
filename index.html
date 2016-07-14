@@ -73,8 +73,10 @@
             <li class="services__item"><a href="#">Процедурный кабинет</a></li>
             <li class="services__item"><a href="#">Массажный кабинет</a></li>
           </ul>
-          <button class="services__controls  services__controls--next"></button>
-          <button class="services__controls  services__controls--prew"></button>
+          <div class="services__controls">
+            <button class="services__control  services__control--next"></button>
+            <button class="services__control  services__control--prew"></button>
+          </div>
           <div class="services__description">
             <h3 class="services__name">Дерматология</h3>
             <div class="services__text">
@@ -87,25 +89,29 @@
         </section>
         <section class="articles">
           <h2 class="articles__title">Полезные статьи</h2>
-          <div class="articles__item">
-            <img class="articles__item-image" src="img/main-image-2.jpg" width="497" height="372" alt="Лифтинг">
-            <h4 class="articles__item-title">Как сделать лифтинг лица в домашних условиях</h4>
-          </div>
-          <div class="articles__item">
-            <img class="articles__item-image" src="img/main-image-5.jpg" width="344" height="230" alt="Заболевания волос">
-            <h4 class="articles__item-title">Внешние причины заболевания волос</h4>
-          </div>
-          <div class="articles__item">
-            <img class="articles__item-image" src="img/main-image-3.jpg" width="233" height="233" alt="Педикюр">
-            <h4 class="articles__item-title">Медицинский педикюр</h4>
-          </div>
-          <div class="articles__item">
-            <img class="articles__item-image" src="img/main-image-3.jpg" width="233" height="233" alt="Педикюр">
-            <h4 class="articles__item-title">Медицинский педикюрх</h4>
-          </div>
-          <div class="articles__item">
-            <img class="articles__item-image" src="img/main-image-5.jpg" width="344" height="230" alt="Заболевания волос">
-            <h4 class="articles__item-title">Внешние причины заболевания волос</h4>
+          <div class="articles__wrapper">
+            <div class="articles__item  articles__item--big">
+              <!--<img class="articles__item-image" src="img/main-image-2.jpg" width="497" height="372" alt="Лифтинг">-->
+              <h4 class="articles__item-title">Как сделать лифтинг лица в домашних условиях</h4>
+            </div>
+            <div class="articles__mini">
+              <div class="articles__item  articles__item--mini  articles__item--mini-1">
+                <!--<img class="articles__item-image" src="img/main-image-5.jpg" width="344" height="230" alt="Заболевания волос">-->
+                <h4 class="articles__item-title">Внешние причины заболевания волос</h4>
+              </div>
+              <div class="articles__item  articles__item--mini  articles__item--mini-2">
+                <!--<img class="articles__item-image" src="img/main-image-3.jpg" width="233" height="233" alt="Педикюр">-->
+                <h4 class="articles__item-title">Медицинский педикюр</h4>
+              </div>
+              <div class="articles__item  articles__item--mini  articles__item--mini-3">
+                <!--<img class="articles__item-image" src="img/main-image-3.jpg" width="233" height="233" alt="Педикюр">-->
+                <h4 class="articles__item-title">Медицинский педикюр</h4>
+              </div>
+              <div class="articles__item  articles__item--mini  articles__item--mini-4">
+                <!--<img class="articles__item-image" src="img/main-image-5.jpg" width="344" height="230" alt="Заболевания волос">-->
+                <h4 class="articles__item-title">Внешние причины заболевания волос</h4>
+              </div>
+            </div>
           </div>
         </section>
         <section class="advantages">
@@ -134,10 +140,10 @@
             </ul>
           </div>
           <div class="page-footer__contacts">
-            <a class="page-header__phone" href="tel:+78123631487">+7(812) 363-14-87</a>
-            <a class="page-header__address" href="#">Санкт-Петербург, ул Марата д.51, лит. А</a>
-            <a class="page-header__mail" href="#">hello@artmedicaspb.ru</a>
-            <a class="page-header__schema" href="#">Схема проезда</a>
+            <a class="page-footer__phone" href="tel:+78123631487">+7(812) 363-14-87</a>
+            <a class="page-footer__address" href="#">Санкт-Петербург, ул Марата д.51, лит. А</a>
+            <a class="page-footer__mail" href="#">hello@artmedicaspb.ru</a>
+            <a class="page-footer__schema" href="#">Схема проезда</a>
           </div>
         </div>
         <div class="page-footer__controls">
@@ -147,7 +153,7 @@
             <a class="page-footer__entry  btn" href="#">Записаться на прием</a>
           </div>
           <div class="page-footer-social">
-            <a class="page-footer-social__link  page-footer-social__link--vk  btn" href="#">Мы ВКонтакте</a>
+            <a class="page-footer-social__link  page-footer-social__link--vk  btn--social" href="#"></a>
           </div>
           <div class="page-footer__copyright">
             <p class="page-footer__copyright-date">Artmedica, 2016</p>

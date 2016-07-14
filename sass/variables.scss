@@ -5,7 +5,12 @@ $font-weight-bold: 700;
 
 $font-size-small: 12px;
 $font-size-normal: 14px;
+$font-size-middle: 15px;
 $font-size-big: 30px;
+$font-size-super-big: 36px;
+
+$letter-spacing: 0.75px;
+$letter-spacing-bid: 1.5px;
 
 $color-dark: #666666;
 $color-white: #ffffff;
@@ -16,3 +21,4 @@ $color-gray: #f4f4f4;
 
 $color-transparent: rgba($color-white, 0.51);
 $color-light-transparent: rgba($color-white, 0.1);
+$color-pastel-transparent: rgba($color-pastel, 0.3);
