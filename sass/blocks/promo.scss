@@ -1,0 +1,79 @@
+.promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.promo__slider {
+  width: 752px;
+}
+
+.promo__item {
+  @include clearfix;
+  width: 640px;
+  position: relative;
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-bottom: 26px;
+  padding-left: 26px;
+  background: $color-light-transparent;
+  border-radius: 30px;
+}
+
+.promo__image {
+  position: relative;
+  float: left;
+  width: 174px;
+  height: 174px;
+  background: url("../img/slider-image-1.jpg") no-repeat;
+  background-position: -35px top;
+  border-radius: 30px;
+}
+
+//.promo__image img {
+//  position: absolute;
+//  top: -5px;
+//  left: -36px;
+//  clip: rect(5px, 210px, 175px, 36px);
+//  border-radius: 100px;
+//}
+
+.promo__offer {
+  float: right;
+  width: 380px;
+  padding-top: 28px;
+  letter-spacing: 0.75px;
+  font-size: $font-size-big;
+  font-weight: $font-weight-bold;
+  color: $color-pastel;
+}
+
+.promo__description {
+  position: absolute;
+  top: 141px;
+  left: 380px;
+  width: 273px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 48px;
+  padding-right: 52px;
+  background: $color-white;
+  border-radius: 30px;
+}
+
+.promo__activities {
+  width: 188px;
+}
+
+.promo__entry {
+  margin-bottom: 12px;
+  font-weight: $font-weight-bold;
+  background: $color-bright;
+  color: $color-white;
+  border-color: $color-bright;
+}
+
+.promo__question {
+  color: $color-light;
+  border-color: $color-light;
+}

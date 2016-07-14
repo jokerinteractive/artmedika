@@ -2,147 +2,159 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Artmedika</title>
+  <title>Artmedica</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic'
+        rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="wrapper">
     <header class="page-header">
-      <div class="page-header__info">
-        <div class="page-header__contacts">
-          <div class="page-header__address">Санкт-Петербург, ул Марата д.51, лит. А</div>
-          <div class="page-header__open-hours">Ежедневно: с 10:00 до 21:00</div>
-          <div class="page-header__phone">+7(812) 363-14-87</div>
+        <div class="page-header__info">
+          <div class="page-header__info-wrapper  wrapper">
+            <div class="page-header__contacts">
+              <div class="page-header__address">Санкт-Петербург, ул Марата д.51, лит. А</div>
+              <div class="page-header__open-hours">Ежедневно: с 10:00 до 21:00</div>
+              <div class="page-header__phone">+7(812) 363-14-87</div>
+            </div>
+            <a class="page-header__search" href="#">Поиск по сайту</a>
+          </div>
         </div>
-        <a class="page-header__search" href="#">Поиск по сайту</a>
-      </div>
-      <a class="page-header-logo"></a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="#">Услуги</a></li>
-          <li class="main-nav__item"><a href="#">Цены</a></li>
-          <li class="main-nav__item"><a href="#">Акции</a></li>
-          <li class="main-nav__item"><a href="#">О клинике</a></li>
-          <li class="main-nav__item"><a href="#">Отзывы</a></li>
-          <li class="main-nav__item"><a href="#">Статьи</a></li>
-        </ul>
-      </nav>
+        <div class="wrapper">
+          <div class="page-header__controls">
+            <a class="page-header-logo">АРТ Медика</a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+                <li class="main-nav__item"><a href="#">Услуги</a></li>
+                <li class="main-nav__item"><a href="#">Цены</a></li>
+                <li class="main-nav__item"><a href="#">Акции</a></li>
+                <li class="main-nav__item"><a href="#">О клинике</a></li>
+                <li class="main-nav__item"><a href="#">Отзывы</a></li>
+                <li class="main-nav__item"><a href="#">Статьи</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
     </header>
     <main>
-      <section class="promo">
-        <div class="promo__slider  slider">
-          <input class="slider__input  slider__input--1" type="radio" name="promo" id="promo-input-1">
-          <input class="slider__input  slider__input--2" type="radio" name="promo" id="promo-input-2" checked>
-          <input class="slider__input  slider__input--3" type="radio" name="promo" id="promo-input-3">
-          <div class="promo__list">
-            <div class="promo__item  slider__item">
-              <img class="promo__image" src="img/main-image-1.jpg" width="423" height="282" alt="Массаж спины">
-              <div class="promo__offer">Скидка на классический массаж спины</div>
-              <div class="promo__description">Действие лечебного массажа состоит в благоприятном влиянии на восприятие
-                рецепторов, которые располагаются под кожей нашего тела.</div>
+      <div class="wrapper">
+        <section class="promo">
+          <div class="promo__slider  slider">
+            <input class="slider__input  slider__input--1" type="radio" name="promo" id="promo-input-1">
+            <input class="slider__input  slider__input--2" type="radio" name="promo" id="promo-input-2" checked>
+            <input class="slider__input  slider__input--3" type="radio" name="promo" id="promo-input-3">
+            <div class="promo__list">
+              <div class="promo__item  slider__item">
+                <div class="promo__image">
+                  <!--<img src="img/slider-image-1.jpg" alt="Массаж спины">-->
+                </div>
+                <div class="promo__offer">Скидка на классический массаж спины</div>
+                <div class="promo__description">Действие лечебного массажа состоит в благоприятном влиянии на восприятие
+                  рецепторов, которые располагаются под кожей нашего тела.</div>
+              </div>
+            </div>
+            <div class="promo__toggles  slider__toggles">
+              <label class="slider__toggle  slider__toggle--1" for="promo-input-1"></label>
+              <label class="slider__toggle  slider__toggle--2" for="promo-input-2"></label>
+              <label class="slider__toggle  slider__toggle--3" for="promo-input-3"></label>
             </div>
           </div>
-          <div class="promo__toggles  slider__toggles">
-            <label class="slider__toggle  slider__toggle--1" for="promo-input-1"></label>
-            <label class="slider__toggle  slider__toggle--2" for="promo-input-2"></label>
-            <label class="slider__toggle  slider__toggle--3" for="promo-input-3"></label>
+          <div class="promo__activities">
+            <a class="promo__entry  btn" href="#">Записаться на прием</a>
+            <a class="promo__question  btn" href="#">Задать вопрос врачу</a>
           </div>
-        </div>
-        <div class="promo__activities">
-          <a class="promo__entry  btn" href="#">Записаться на прием</a>
-          <a class="promo__question  btn" href="#">Задать вопрос врачу</a>
-        </div>
-      </section>
-      <section class="services">
-        <ul class="services__list">
-          <li class="services__item  services__item--active"><a>Дерматология</a></li>
-          <li class="services__item"><a href="#">Косметология</a></li>
-          <li class="services__item"><a href="#">Венерология</a></li>
-          <li class="services__item"><a href="#">Трихология</a></li>
-          <li class="services__item"><a href="#">Процедурный кабинет</a></li>
-          <li class="services__item"><a href="#">Массажный кабинет</a></li>
-        </ul>
-        <button class="services__controls  services__controls--next"></button>
-        <button class="services__controls  services__controls--prew"></button>
-        <div class="services__description">
-          <h3 class="services__name">Дерматология</h3>
-          <div class="services__text">
-            Обращаясь в центр дерматологии, можно решить сложнейшие задачи. Чаще всего болезни кожи приносят человеку
-            моральные страдания, так как имеют внешние проявления. Специалисты, которые работают на центр дерматологии,
-            способны принести исцеление телу пациента, а также лишить его многочисленных комплексов, вернуть радость
-            общения с другими людьми.
+        </section>
+        <section class="services">
+          <ul class="services__list">
+            <li class="services__item  services__item--active"><a>Дерматология</a></li>
+            <li class="services__item"><a href="#">Косметология</a></li>
+            <li class="services__item"><a href="#">Венерология</a></li>
+            <li class="services__item"><a href="#">Трихология</a></li>
+            <li class="services__item"><a href="#">Процедурный кабинет</a></li>
+            <li class="services__item"><a href="#">Массажный кабинет</a></li>
+          </ul>
+          <button class="services__controls  services__controls--next"></button>
+          <button class="services__controls  services__controls--prew"></button>
+          <div class="services__description">
+            <h3 class="services__name">Дерматология</h3>
+            <div class="services__text">
+              Обращаясь в центр дерматологии, можно решить сложнейшие задачи. Чаще всего болезни кожи приносят человеку
+              моральные страдания, так как имеют внешние проявления. Специалисты, которые работают на центр дерматологии,
+              способны принести исцеление телу пациента, а также лишить его многочисленных комплексов, вернуть радость
+              общения с другими людьми.
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="articles">
-        <h2 class="articles__title">Полезные статьи</h2>
-        <div class="articles__item">
-          <img class="articles__item-image" src="img/main-image-2.jpg" width="497" height="372" alt="Лифтинг">
-          <h4 class="articles__item-title">Как сделать лифтинг лица в домашних условиях</h4>
-        </div>
-        <div class="articles__item">
-          <img class="articles__item-image" src="img/main-image-5.jpg" width="344" height="230" alt="Заболевания волос">
-          <h4 class="articles__item-title">Внешние причины заболевания волос</h4>
-        </div>
-        <div class="articles__item">
-          <img class="articles__item-image" src="img/main-image-3.jpg" width="233" height="233" alt="Педикюр">
-          <h4 class="articles__item-title">Медицинский педикюр</h4>
-        </div>
-        <div class="articles__item">
-          <img class="articles__item-image" src="img/main-image-3.jpg" width="233" height="233" alt="Педикюр">
-          <h4 class="articles__item-title">Медицинский педикюрх</h4>
-        </div>
-        <div class="articles__item">
-          <img class="articles__item-image" src="img/main-image-5.jpg" width="344" height="230" alt="Заболевания волос">
-          <h4 class="articles__item-title">Внешние причины заболевания волос</h4>
-        </div>
-      </section>
-      <section class="advantages">
-        <h2 class="advantages__title">Текст для SEO</h2>
-        <p class="advantages__text">
-          Обратившись в центр медицинский СПб, можно проконсультироваться с доктором и тут же пройти назначенные
-          обследования, сдать анализы. Не придется томиться в длинных очередях и томиться ожиданием. Результаты тут же
-          получить лечащий врач. Еще одно преимущества центра «АртМедика» - конфиденциальная клиентская база. Если
-          клиент случайно потерял важные справки или медицинские документы, они будут без труда восстановлены. Лечение
-          заново проходить не придется.Центр медицинский СПб предлагает ряд поощрений для своих посетителей.
-        </p>
-      </section>
+        </section>
+        <section class="articles">
+          <h2 class="articles__title">Полезные статьи</h2>
+          <div class="articles__item">
+            <img class="articles__item-image" src="img/main-image-2.jpg" width="497" height="372" alt="Лифтинг">
+            <h4 class="articles__item-title">Как сделать лифтинг лица в домашних условиях</h4>
+          </div>
+          <div class="articles__item">
+            <img class="articles__item-image" src="img/main-image-5.jpg" width="344" height="230" alt="Заболевания волос">
+            <h4 class="articles__item-title">Внешние причины заболевания волос</h4>
+          </div>
+          <div class="articles__item">
+            <img class="articles__item-image" src="img/main-image-3.jpg" width="233" height="233" alt="Педикюр">
+            <h4 class="articles__item-title">Медицинский педикюр</h4>
+          </div>
+          <div class="articles__item">
+            <img class="articles__item-image" src="img/main-image-3.jpg" width="233" height="233" alt="Педикюр">
+            <h4 class="articles__item-title">Медицинский педикюрх</h4>
+          </div>
+          <div class="articles__item">
+            <img class="articles__item-image" src="img/main-image-5.jpg" width="344" height="230" alt="Заболевания волос">
+            <h4 class="articles__item-title">Внешние причины заболевания волос</h4>
+          </div>
+        </section>
+        <section class="advantages">
+          <h2 class="advantages__title">Текст для SEO</h2>
+          <p class="advantages__text">
+            Обратившись в центр медицинский СПб, можно проконсультироваться с доктором и тут же пройти назначенные
+            обследования, сдать анализы. Не придется томиться в длинных очередях и томиться ожиданием. Результаты тут же
+            получить лечащий врач. Еще одно преимущества центра «АртМедика» - конфиденциальная клиентская база. Если
+            клиент случайно потерял важные справки или медицинские документы, они будут без труда восстановлены. Лечение
+            заново проходить не придется.Центр медицинский СПб предлагает ряд поощрений для своих посетителей.
+          </p>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__info">
-        <div class="page-footer__nav">
-          <ul class="page-footer__nav-list">
-            <li class="page-footer__nav-item"><a href="#">Цены</a></li>
-            <li class="page-footer__nav-item"><a href="#">Услуги</a></li>
-            <li class="page-footer__nav-item"><a href="#">Статьи</a></li>
-            <li class="page-footer__nav-item"><a href="#">Акции</a></li>
-            <li class="page-footer__nav-item"><a href="#">О клинике</a></li>
-            <li class="page-footer__nav-item"><a href="#">Отзывы</a></li>
-          </ul>
+      <div class="wrapper">
+        <div class="page-footer__info">
+          <div class="page-footer__nav">
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-item"><a href="#">Цены</a></li>
+              <li class="page-footer__nav-item"><a href="#">Услуги</a></li>
+              <li class="page-footer__nav-item"><a href="#">Статьи</a></li>
+              <li class="page-footer__nav-item"><a href="#">Акции</a></li>
+              <li class="page-footer__nav-item"><a href="#">О клинике</a></li>
+              <li class="page-footer__nav-item"><a href="#">Отзывы</a></li>
+            </ul>
+          </div>
+          <div class="page-footer__contacts">
+            <a class="page-header__phone" href="tel:+78123631487">+7(812) 363-14-87</a>
+            <a class="page-header__address" href="#">Санкт-Петербург, ул Марата д.51, лит. А</a>
+            <a class="page-header__mail" href="#">hello@artmedicaspb.ru</a>
+            <a class="page-header__schema" href="#">Схема проезда</a>
+          </div>
         </div>
-        <div class="page-footer__contacts">
-          <a class="page-header__phone" href="tel:+78123631487">+7(812) 363-14-87</a>
-          <a class="page-header__address" href="#">Санкт-Петербург, ул Марата д.51, лит. А</a>
-          <a class="page-header__mail" href="#">hello@artmedicaspb.ru</a>
-          <a class="page-header__schema" href="#">Схема проезда</a>
-        </div>
-      </div>
-      <div class="page-footer__controls">
-        <div class="page-footer__activities">
-          <a class="page-footer__question  btn" href="#">Задать вопрос врачу</a>
-          <a class="page-footer__review  btn" href="#">Оставить отзыв</a>
-          <a class="page-footer__entry  btn" href="#">Записаться на прием</a>
-        </div>
-        <div class="page-footer-social">
-          <a class="page-footer-social__link  page-footer-social__link--vk  btn" href="#">Мы ВКонтакте</a>
-        </div>
-        <div class="page-footer__copyright">
-          <p class="page-footer__copyright-date">Artmedica, 2016</p>
-          <p class="page-footer__copyright-link">Сделано в <a href="#">Azbuka</a></p>
+        <div class="page-footer__controls">
+          <div class="page-footer__activities">
+            <a class="page-footer__question  btn" href="#">Задать вопрос врачу</a>
+            <a class="page-footer__review  btn" href="#">Оставить отзыв</a>
+            <a class="page-footer__entry  btn" href="#">Записаться на прием</a>
+          </div>
+          <div class="page-footer-social">
+            <a class="page-footer-social__link  page-footer-social__link--vk  btn" href="#">Мы ВКонтакте</a>
+          </div>
+          <div class="page-footer__copyright">
+            <p class="page-footer__copyright-date">Artmedica, 2016</p>
+            <p class="page-footer__copyright-link">Сделано в <a href="#">Azbuka</a></p>
+          </div>
         </div>
       </div>
     </footer>
-  </div>
 </body>
 </html>
