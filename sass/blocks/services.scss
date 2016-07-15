@@ -1,46 +1,46 @@
 .services {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 35px;
+}
+
+.services__title {
+  margin-bottom: 35px;
+  font-size: $font-size-big;
+  font-weight: $font-weight-bold;
+  color: $color-pastel;
 }
 
 .services__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 480px;
+  //justify-content: space-between;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .services__item {
-  width: 140px;
-  //background: url("../img/icons/services-dermatology.svg") no-repeat center;
-  //background-size: 140px 140px;
+  width: 300px;
+  height: 114px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid $color-dark;
+  border-radius: 100px;
+  box-sizing: border-box;
+}
+
+.services__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .services__item a {
+  display: block;
+  width: 100px;
+  padding-top: 45px;
+  //padding-bottom: 50px;
+  padding-left: 150px;
   font-size: $font-size-middle;
   text-decoration: none;
-  color: $color-white;
-}
-
-.services__description {
-  width: 300px;
-  padding-top: 14px;
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-bottom: 55px;
-
-}
-
-.services__control {
-  display: block;
-}
-
-.services__name {
-  font-size: $font-size-big;
-  font-weight: $font-weight-bold;
-  color: $color-pastel;
+  color: $color-dark;
 }

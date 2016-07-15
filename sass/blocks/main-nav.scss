@@ -21,6 +21,10 @@
   color: $color-white;
 }
 
+.main-nav__item--inner-page a {
+  color: $color-light;
+}
+
 .main-nav__item--active a {
   color: $color-bright;
 }
