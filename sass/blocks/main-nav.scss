@@ -1,0 +1,26 @@
+.main-nav {
+  width: 700px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item a {
+  padding-top: 16px;
+  padding-bottom: 19px;
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.main-nav__item--active a {
+  color: $color-bright;
+}
