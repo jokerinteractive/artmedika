@@ -1,0 +1,46 @@
+.partners-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners-info__logo {
+  display: block;
+  width: 192px;
+  height: 168px;
+  padding-top: 20px;
+  background: url("../img/logo-laboratory.png") no-repeat center;
+}
+
+.partners-info__description {
+  width: 510px;
+  padding-left: 59px;
+}
+
+.partners-info__title {
+  padding-bottom: 20px;
+  font-size: $font-size-bigger-middle;
+  font-weight: $font-weight-bold;
+}
+
+.partners-info__text {
+  width: 421px;
+  padding-bottom: 10px;
+}
+
+.partners-info__contacts {
+  width: 160px;
+  padding-top: 40px;
+}
+
+.partners-info__contacts b {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.partners-info__address {
+  padding-bottom: 20px;
+}
+
+.partners-info__phone-number {
+  font-weight: $font-weight-bold;
+}
