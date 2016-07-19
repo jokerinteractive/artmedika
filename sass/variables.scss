@@ -6,6 +6,7 @@ $font-weight-bold: 700;
 $font-size-small: 12px;
 $font-size-normal: 14px;
 $font-size-middle: 15px;
+$font-size-bigger-middle: 18px;
 $font-size-big: 30px;
 $font-size-super-big: 36px;
 
@@ -18,7 +19,11 @@ $color-bright: #f1676a;
 $color-pastel: #958387;
 $color-light: #999999;
 $color-gray: #f4f4f4;
+$color-light-gray: #ececec;
+$color-dark-gray: #cccccc;
 
 $color-transparent: rgba($color-white, 0.51);
+$color-dark-transparent: rgba($color-dark-gray, 0.51);
 $color-light-transparent: rgba($color-white, 0.1);
 $color-pastel-transparent: rgba($color-pastel, 0.3);
+$color-bright-transparent: rgba($color-bright, 0.75);

@@ -1,0 +1,13 @@
+.title {
+  font-weight: $font-weight-bold;
+  color: $color-pastel;
+
+  &--h2 {
+    font-size: $font-size-super-big;
+    line-height: 47px;
+  }
+
+  &--h3 {
+  font-size: $font-size-big;
+  }
+}

@@ -1,0 +1,96 @@
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.service-item__title {
+  margin-bottom: 25px;
+}
+
+.service-item__info {
+  width: 330px;
+  padding-top: 45px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 38px;
+  border-radius: 30px;
+  box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
+}
+
+.service-item__promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 540px;
+}
+
+.service-item__image {
+  width: 540px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+
+  &--procedure {
+    background-image: url("../img/services-procedures.jpg");
+  }
+
+  &--cleaning {
+    background-image: url("../img/services-cleaning.jpg");
+  }
+}
+
+.service-item__table {
+  width: 540px;
+  border-collapse: collapse;
+}
+
+.service-item__table-header {
+  padding-bottom: 15px;
+  font-size: $font-size-bigger-middle;
+  font-weight: $font-weight-bold;
+  color: $color-dark;
+  border-bottom: 2px solid $color-bright;
+}
+
+.service-item__row-name {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  color: $color-dark;
+  border-bottom: 1px solid $color-light-gray;
+}
+
+.service-item__row-price {
+  padding-top: 25px;
+  padding-bottom: 12px;
+  font-weight: $font-weight-bold;
+  text-align: right;
+  color: $color-bright;
+  border-bottom: 1px solid $color-light-gray;
+}
+
+.service-item__row-2 .service-item__row-name {
+  padding-top: 12px;
+}
+
+.service-item__row-2 .service-item__row-price {
+  padding-top: 12px;
+}
+
+.service-item__promo-activities {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.service-item__entry {
+  margin-right: 20px;
+  font-weight: $font-weight-bold;
+  color: $color-bright;
+  border-color: $color-bright;
+}
+
+.service-item__question {
+  color: $color-light;
+  border-color: $color-light;
+}

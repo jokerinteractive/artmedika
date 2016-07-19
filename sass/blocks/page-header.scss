@@ -1,6 +1,10 @@
 .page-header__info {
   padding: 15px 0;
   background: $color-transparent;
+
+  &--inner-page {
+    background: $color-dark-transparent;
+  }
 }
 
 .page-header__info-wrapper {
@@ -14,6 +18,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 640px;
+  color: $color-light;
 }
 
 .page-header__controls {
@@ -21,4 +26,8 @@
   justify-content: space-between;
   padding-top: 33px;
   padding-bottom: 46px;
+}
+
+.page-header__phone-number {
+  font-weight: $font-weight-bold;
 }
