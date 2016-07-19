@@ -28,8 +28,17 @@
 .service-item__image {
   width: 540px;
   height: 270px;
-  background: url("../img/services-procedures.jpg") no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 30px;
+
+  &--procedure {
+    background-image: url("../img/services-procedures.jpg");
+  }
+
+  &--cleaning {
+    background-image: url("../img/services-cleaning.jpg");
+  }
 }
 
 .service-item__table {
