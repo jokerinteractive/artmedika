@@ -23,6 +23,10 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $color-white;
+
+  &:hover {
+    color: $color-bright;
+  }
 }
 
 .main-nav__item--inner-page a {
@@ -31,4 +35,5 @@
 
 .main-nav__item--active a {
   color: $color-bright;
+  border-bottom: 3px solid $color-bright;
 }
