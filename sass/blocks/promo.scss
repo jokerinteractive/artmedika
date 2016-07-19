@@ -19,6 +19,7 @@
   padding-left: 26px;
   background: $color-light-transparent;
   border-radius: 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.05);
 }
 
 .promo__image {
@@ -60,17 +61,4 @@
 
 .promo__activities {
   width: 188px;
-}
-
-.promo__entry {
-  margin-bottom: 12px;
-  font-weight: $font-weight-bold;
-  background: $color-bright;
-  color: $color-white;
-  border-color: $color-bright;
-}
-
-.promo__question {
-  color: $color-light;
-  border-color: $color-light;
 }
