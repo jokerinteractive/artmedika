@@ -24,7 +24,23 @@
   font-size: $font-size-middle;
   text-decoration: none;
   color: $color-white;
+  text-align: center;
+  display: inline-block;
 }
+
+/* testing SVG */
+.main-services__item svg path {
+  fill: #fff;
+  stroke: white;
+  stroke-width: 1px;
+  transition: .3s;
+}
+
+.main-services__item:hover svg path {
+  fill: red;
+  stroke: red;
+}
+/* end testing SVG */
 
 .main-services__description {
   width: 300px;
