@@ -20,6 +20,11 @@
   background: $color-light-transparent;
   border-radius: 30px;
   box-shadow: 0 3px 10px rgba(0,0,0,.05);
+  transition: background 0.3s;
+
+  &:hover {
+    background: rgba(255,255,255,0.18);
+  }
 }
 
 .promo__image {
@@ -47,6 +52,7 @@
 }
 
 .promo__description {
+  display: none;
   position: absolute;
   top: 141px;
   left: 380px;
@@ -57,6 +63,26 @@
   padding-right: 52px;
   background: $color-white;
   border-radius: 30px;
+}
+
+.promo__item:hover .promo__description {
+  display: block;
+}
+
+.promo__description svg {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -60px;
+  margin-right: 25px;
+}
+
+.promo__description svg path {
+  fill: $color-red;
+}
+
+.promo__description p {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .promo__activities {

@@ -1,13 +1,14 @@
 .main-services {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 55px;
 }
 
 .main-services__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 480px;
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@
 
 .main-services__item {
   width: 140px;
+  margin-bottom: 45px;
   //background: url("../img/icons/services-dermatology.svg") no-repeat center;
   //background-size: 140px 140px;
 }
@@ -26,6 +28,12 @@
   color: $color-white;
   text-align: center;
   display: inline-block;
+}
+
+.main-services__item svg {
+  width: 112px;
+  height: 112px;
+  margin-bottom: 20px;
 }
 
 /* testing SVG */

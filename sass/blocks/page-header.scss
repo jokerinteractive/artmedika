@@ -32,3 +32,28 @@
 .page-header__phone-number {
   font-weight: $font-weight-bold;
 }
+
+.page-header__search svg {
+  margin-left: -52px;
+  margin-top: -1px;
+}
+
+.page-header__search svg path {
+  fill: $color-pastel;
+}
+
+.page-header__search:hover svg path {
+  fill: $color-dark-gray;
+}
+
+.page-header__search-field {
+  display: none;
+  width: 250px;
+  height: 27px;
+  padding-left: 20px;
+  margin-top: -5px;
+  border: 2px solid $color-dark-gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
