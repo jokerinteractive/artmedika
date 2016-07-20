@@ -37,18 +37,22 @@
   border-radius: 30px;
 }
 
-//.promo__image img {
-//  position: absolute;
-//  top: -5px;
-//  left: -36px;
-//  clip: rect(5px, 210px, 175px, 36px);
-//  border-radius: 100px;
-//}
-
 .promo__offer {
   float: right;
   width: 380px;
   padding-top: 28px;
+  margin-right: 40px;
+  font-size: $font-size-big;
+  font-weight: $font-weight-bold;
+  color: $color-bright;
+
+  &::before {
+    color: $color-pastel;
+    content: attr(data-hover);
+    position: absolute;
+    margin-right: 40px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
 }
 
 .promo__description {
@@ -67,6 +71,11 @@
 
 .promo__item:hover .promo__description {
   display: block;
+}
+
+.promo__item:hover .promo__offer::before {
+  transform: scale(0.9);
+  opacity: 0;
 }
 
 .promo__description svg {
