@@ -70,9 +70,10 @@
 }
 
 .page-footer__schema {
-  width: 273px;
-  padding-left: 27px;
+  margin-right: 160px;
+  margin-bottom: 24px;
   color: $color-light;
+  border-bottom: 1px dotted;
 }
 
 .page-footer__controls {
@@ -89,8 +90,9 @@
 }
 
 .page-footer__activities a {
-  color: $color-light;
-  border-color: $color-light;
+  text-align: center;
+  font-size: 13px;
+  width: 180px;  
 }
 
 .page-footer__copyright {

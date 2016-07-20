@@ -21,14 +21,17 @@
     border-color: $color-bright;
   }
 
-  &--social {
+  &--vk {
     display: block;
     width: 35px;
     height: 35px;
+    padding: 0;
     text-decoration: none;
     border-radius: 50%;
     border-style: solid;
     border-width: 2px;
     outline: none;
+    text-indent: 100%;
+    overflow: hidden;
   }
 }
