@@ -31,7 +31,20 @@
     border-style: solid;
     border-width: 2px;
     outline: none;
-    text-indent: 100%;
+    //text-indent: 100%;
     overflow: hidden;
+
+    &:hover svg path {
+      fill: $color-white;
+    }
+  }
+
+  &--vk svg {
+    width: 100%;
+    transform: translateY(6px);
+  }
+
+  &--vk svg path {
+    fill: $color-dark;
   }
 }
