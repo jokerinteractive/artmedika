@@ -1,13 +1,14 @@
 .main-services {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 55px;
 }
 
 .main-services__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 480px;
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@
 
 .main-services__item {
   width: 140px;
+  margin-bottom: 45px;
   //background: url("../img/icons/services-dermatology.svg") no-repeat center;
   //background-size: 140px 140px;
 }
@@ -26,6 +28,12 @@
   color: $color-white;
   text-align: center;
   display: inline-block;
+}
+
+.main-services__item svg {
+  width: 112px;
+  height: 112px;
+  margin-bottom: 20px;
 }
 
 /* testing SVG */
@@ -48,9 +56,49 @@
   padding-left: 20px;
   padding-right: 10px;
   padding-bottom: 55px;
+}
 
+.main-services__controls {
+  width: 36px;
+  margin-top: 130px;
 }
 
 .main-services__control {
   display: block;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: $color-white-transparent;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  &--next {
+    margin-bottom: 15px;
+  }
+
+  &--next svg {
+    margin-top: 4px;
+    margin-left: 2px;
+  }
+
+  &--next svg path {
+    fill: $color-bright;
+  }
+
+  &--prew svg {
+    margin-top: 4px;
+    margin-right: 2px;
+    transform: rotate(180deg);
+  }
+
+  &--prew svg path {
+    fill: $color-white;
+  }
+}
+
+.main-services__name {
+  margin-bottom: 35px;
 }

@@ -54,6 +54,19 @@
 
 .page-footer__contacts a {
   text-decoration: none;
+
+  &:hover {
+    color: $color-dark-gray;
+  }
+
+  &:hover svg path {
+    fill: $color-dark-gray;
+  }
+}
+
+.page-footer__contacts svg {
+  margin-right: 8px;
+  transform: translateY(3px);
 }
 
 .page-footer__phone,
@@ -61,11 +74,10 @@
   width: 240px;
   margin-bottom: 25px;
   color: $color-dark;
-
 }
 
 .page-footer__address {
-  width: 300px;
+  width: 320px;
   color: $color-dark;
 }
 
@@ -73,6 +85,7 @@
   margin-right: 160px;
   margin-bottom: 24px;
   color: $color-light;
+  text-transform: lowercase;
   border-bottom: 1px dotted;
 }
 
@@ -92,7 +105,7 @@
 .page-footer__activities a {
   text-align: center;
   font-size: 13px;
-  width: 180px;  
+  width: 180px;
 }
 
 .page-footer__copyright {
@@ -107,5 +120,17 @@
 }
 
 .page-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  width: 145px;
   color: $color-dark;
+}
+
+.page-footer__copyright-link a {
+  display: block;
+  width: 69px;
+  height: 30px;
+  margin-top: -5px;
+  font-size: 0;
+  background: url("../img/azbuka.png") no-repeat center;
 }

@@ -1,11 +1,13 @@
 .btn {
   display: block;
-  width: 188px;
-  padding: 8px 20px;
+  width: 193px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   margin-bottom: 12px;
   box-sizing: border-box;
-  font-size: $font-size-normal;
+  font-size: 14px;
   text-decoration: none;
+  text-align: center;
   color: $color-light;
   border-color: $color-light;
   border-radius: 50px;
@@ -14,10 +16,22 @@
   outline: none;
   transition: .3s;
 
+  &--1 {
+    color: $color-bright;
+    border-color: $color-bright;
+  }
+
   &:hover {
     font-weight: $font-weight-bold;
     background-color: $color-bright;
     color: $color-white;
+    border-color: $color-bright;
+  }
+
+  &--2:hover {
+    font-weight: $font-weight-normal;
+    background-color: transparent;
+    color: $color-bright;
     border-color: $color-bright;
   }
 
@@ -31,7 +45,20 @@
     border-style: solid;
     border-width: 2px;
     outline: none;
-    text-indent: 100%;
+    //text-indent: 100%;
     overflow: hidden;
+
+    &:hover svg path {
+      fill: $color-white;
+    }
+  }
+
+  &--vk svg {
+    width: 100%;
+    transform: translateY(6px);
+  }
+
+  &--vk svg path {
+    fill: $color-dark;
   }
 }

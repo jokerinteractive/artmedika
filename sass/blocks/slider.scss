@@ -1,3 +1,42 @@
 .slider__input {
   display: none;
 }
+
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-top: 25px;
+  margin-left: 60px;
+}
+
+.slider__toggle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 2px solid $color-white;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-red;
+    border-color: $color-red;
+  }
+}
+
+.slider__toggle:active {
+  background-color: $color-red;
+  transform: scale(1.5);
+}
+
+.slider__input--1:checked ~ .slider__toggles .slider__toggle--1,
+.slider__input--2:checked ~ .slider__toggles .slider__toggle--2,
+.slider__input--3:checked ~ .slider__toggles .slider__toggle--3 {
+  background-color: $color-red;
+  border-color: $color-red;
+  transform: scale(1.5);
+}
