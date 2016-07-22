@@ -17,6 +17,7 @@
   transition: .3s;
 
   &--1 {
+    font-weight: $font-weight-bold;
     color: $color-bright;
     border-color: $color-bright;
   }
