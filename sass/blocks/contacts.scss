@@ -1,0 +1,28 @@
+.contacts {
+  padding-bottom: 55px;
+}
+
+.contacts__wrapper {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__info {
+  margin-bottom: 10px;
+  font-size: $font-size-middle;
+  line-height: 1.4em;
+}
+
+.contacts__info-phone,
+.contacts__info-time {
+  font-size: $font-size-smaller-big;
+  line-height: 1.4em;
+}
