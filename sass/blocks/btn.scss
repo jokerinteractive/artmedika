@@ -61,4 +61,20 @@
   &--vk svg path {
     fill: $color-dark;
   }
+
+  &--error {
+    font-weight: $font-weight-bold;
+  }
+
+  &--error svg {
+    transform: translate(7px, 3px);
+  }
+
+  &--error svg path {
+    fill: $color-bright;
+  }
+
+  &--error:hover svg path {
+    fill: $color-white;
+  }
 }
