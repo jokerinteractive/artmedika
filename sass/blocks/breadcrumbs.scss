@@ -22,9 +22,14 @@
 }
 
 .breadcrumbs__item a::after {
-  content: "»";
+  content: "";
   position: absolute;
   right: 3px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  background: url("../img/icons/arrow-breadcrumbs.svg") no-repeat center;
+  opacity: 0.3;
 }
 
 .breadcrumbs__item--active a::after {

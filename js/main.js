@@ -47,15 +47,19 @@ function hideReview() {
 }
 
 //Добавляет обработчики события кнопкам
-entryBtn.addEventListener("click", function(event) {
-	event.preventDefault();
-	showEntry();
-});
+if (entryBtn) {
+	entryBtn.addEventListener("click", function(event) {
+		event.preventDefault();
+		showEntry();
+	});
+}
 
-questionBtn.addEventListener("click", function(event) {
-	event.preventDefault();
-	showQuestion();
-});
+if (questionBtn) {
+	questionBtn.addEventListener("click", function(event) {
+		event.preventDefault();
+		showQuestion();
+	});
+}
 
 entryBtnFooter.addEventListener("click", function(event) {
 	event.preventDefault();

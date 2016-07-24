@@ -1,0 +1,21 @@
+.error {
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 180px;
+  padding-bottom: 182px;
+}
+
+.error__404 {
+  font-size: $font-size-decoration;
+  font-weight: $font-weight-bold;
+  color: $color-pastel;
+}
+
+.error__message {
+  font-size: $font-size-middle;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 47px;
+  }
+}
