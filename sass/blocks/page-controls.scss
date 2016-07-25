@@ -36,6 +36,10 @@
   outline: none;
   cursor: pointer;
 
+  &--long {
+    width: 160px;
+  }
+
   &:hover svg path {
     fill: $color-bright;
   }
