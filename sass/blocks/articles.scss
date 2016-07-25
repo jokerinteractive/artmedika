@@ -6,6 +6,10 @@
   }
 }
 
+.articles a {
+  text-decoration: none;
+}
+
 .articles__title {
   margin-bottom: 42px;
   text-align: center;
@@ -144,6 +148,11 @@
   }
 }
 
+.articles--inner-page .articles__item--hidden {
+  background: $color-gray-2;
+  color: $color-light;
+}
+
 .articles__item-title {
   padding: 10px 20px;
   font-size: $font-size-middle;
@@ -171,6 +180,14 @@
       transform: scale(0.9);
       opacity: 0;
     }
+  }
+}
+
+.articles--inner-page .articles__item-title--hidden {
+  color: $color-dark;
+
+  &::before {
+    color: $color-dark;
   }
 }
 
