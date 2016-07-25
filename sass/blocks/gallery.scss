@@ -1,0 +1,76 @@
+.gallery__image {
+  width: 540px;
+  height: 365px;
+  margin-bottom: 28px;
+  background-image: url("../img/hospital-big.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery__thumbnails {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
+}
+
+.gallery__item {
+  width: 84px;
+  height: 84px;
+  border-radius: 20px;
+  background-image: url("../img/hospital-mini-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &--active {
+    box-shadow:
+      0 0 0 3px $color-white,
+      0 0 0 5px $color-dark-gray;
+  }
+
+  &--2 {
+    background-image: url("../img/hospital-mini-2.jpg");
+  }
+
+  &--4 {
+    background-image: url("../img/hospital-mini-4.jpg");
+  }
+}
+
+.gallery__control {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  background-color: $color-transparent;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover svg path {
+    fill: $color-bright;
+  }
+
+  &--prew {
+    transform: translate(-35px, 200%);
+  }
+
+  &--prew svg {
+    transform: translate(12px, 2px) rotate(180deg);
+  }
+
+  &--next {
+    transform: translate(430px, 200%);
+  }
+
+  &--next svg {
+    transform: translate(-12px, 2px)
+  }
+}
+
+.gallery__control svg path {
+  fill: $color-white;
+}
