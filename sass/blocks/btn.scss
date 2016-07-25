@@ -5,7 +5,7 @@
   padding-bottom: 9px;
   margin-bottom: 12px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: $font-size-normal;
   text-decoration: none;
   text-align: center;
   color: $color-light;
@@ -15,6 +15,7 @@
   border-width: 2px;
   outline: none;
   transition: .3s;
+  cursor: pointer;
 
   &--1 {
     font-weight: $font-weight-bold;
@@ -29,7 +30,24 @@
     border-color: $color-bright;
   }
 
+  &--2 {
+    background-color: transparent;
+  }
+
   &--2:hover {
+    font-weight: $font-weight-normal;
+    background-color: transparent;
+    color: $color-bright;
+    border-color: $color-bright;
+  }
+
+  &--4 {
+    background-color: transparent;
+    color: $color-light;
+    border-color: $color-dark-gray;
+  }
+
+  &--4:hover {
     font-weight: $font-weight-normal;
     background-color: transparent;
     color: $color-bright;
