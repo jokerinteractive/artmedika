@@ -1,5 +1,10 @@
 .reviews {
+  padding-bottom: 60px;
+}
+
+.reviews__feedback {
   width: 100%;
+  margin-bottom: 35px;
   padding: 30px;
   border-radius: 30px;
   box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
@@ -57,4 +62,102 @@
 
 .reviews__btn {
   margin-left: 355px;
+}
+
+.reviews__list {
+  padding-bottom: 30px;
+}
+
+.reviews__item {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $color-light-gray;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.reviews__name,
+.reviews__date {
+  font-size: $font-size-small;
+  line-height: 18px;
+  color: $color-light;
+}
+
+.reviews__name {
+  margin-right: 25px;
+}
+
+.reviews__text {
+  margin-top: 15px;
+  font-size: $font-size-middle;
+  color: $color-dark;
+}
+
+.reviews__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 382px;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  color: $color-light;
+  border-color: $color-light;
+  border-radius: 50px;
+  border-width: 2px;
+  outline: none;
+  font-size: $font-size-middle;
+  border: none;
+  box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
+}
+
+.reviews__control {
+  width: 80px;
+  padding: 0;
+  font-size: $font-size-middle;
+  background: transparent;
+  color: $color-light;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover svg path {
+    fill: $color-bright;
+  }
+
+  &--prew svg {
+    margin-right: 10px;
+    transform: translateY(5px) rotate(180deg);
+  }
+
+  &--next svg {
+    margin-left: 10px;
+    transform: translateY(5px);
+  }
+}
+
+.reviews__control svg path {
+  fill: $color-dark-gray;
+}
+
+.reviews__pages {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  list-style: none;
+}
+
+.reviews__page {
+  cursor: pointer;
 }
