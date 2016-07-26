@@ -1,11 +1,7 @@
 .page-controls {
   display: flex;
   justify-content: space-between;
-  width: 382px;
-  padding-top: 8px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 10px;
+  width: 390px;
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
@@ -24,24 +20,47 @@
   &--articles {
     margin-bottom: 56px;
   }
+
+  &--long {
+    width: 450px;
+  }
 }
 
 .page-controls__control {
-  width: 80px;
+  width: 120px;
   padding: 0;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: $font-size-middle;
   background: transparent;
   color: $color-light;
   border: none;
   outline: none;
   cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
 
   &--long {
-    width: 160px;
+    width: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &:hover {
+    background-color: $color-gray;
+    color: $color-dark;
   }
 
   &:hover svg path {
-    fill: $color-bright;
+    fill: $color-dark;
+  }
+
+  &--prew {
+    padding-right: 25px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
   }
 
   &--prew svg {
@@ -49,9 +68,18 @@
     transform: translateY(5px) rotate(180deg);
   }
 
+  &--next {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
   &--next svg {
     margin-left: 10px;
     transform: translateY(5px);
+  }
+
+  &--long-prew {
+    padding-right: 20px;
   }
 }
 
@@ -65,10 +93,32 @@
   width: 150px;
   margin: 0;
   padding: 0;
-  padding-top: 5px;
+  padding-top: 13px;
   list-style: none;
 }
 
 .page-controls__page {
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-gray;
+    color: $color-dark;
+  }
+}
+
+.page-controls__page a {
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  color: $color-light;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-gray;
+  }
+}
+
+.page-controls__page--active a {
+  background-color: $color-gray;
 }

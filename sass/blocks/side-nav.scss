@@ -25,10 +25,7 @@
 
   &:hover {
     color: $color-light;
-  }
-
-  &:hover .side-nav__text {
-    border-bottom: $color-light;
+    text-decoration: underline;
   }
 }
 
@@ -79,6 +76,11 @@
   margin-bottom: 15px;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $color-dark-gray;
+  }
 
   &--vk {
     background-color: $color-vk;

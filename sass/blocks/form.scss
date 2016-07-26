@@ -27,11 +27,11 @@
   border: 1px solid $color-gray-1;
   outline: none;
   box-sizing: border-box;
-}
 
-.form__input:focus {
-  background: transparent;
-  border-color: $color-bright-red;
+  &:focus {
+    background: transparent;
+    border-color: $color-bright-red;
+  }
 }
 
 .form__btn {
