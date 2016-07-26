@@ -17,51 +17,71 @@
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center;
-  transition: opacity 0.35s, transform 0.35s;
   overflow: hidden;
 
   &:hover {
     box-shadow: 0 3px 16px 0 rgba(28, 30, 31, 0.15);
   }
 
-  &--1 {
-    background-image: url("../img/service-list-1.jpg");
+  &:hover img {
+    transform: scale(1);
+    opacity: 0.5;
   }
 
-  &--2 {
-    background-image: url("../img/service-list-2.jpg");
-  }
+  //&--1 {
+  //  background-image: url("../img/service-list-1.jpg");
+  //}
+  //
+  //&--2 {
+  //  background-image: url("../img/service-list-2.jpg");
+  //}
+  //
+  //&--3 {
+  //  background-image: url("../img/service-list-3.jpg");
+  //}
+  //
+  //&--4 {
+  //  background-image: url("../img/service-list-4.jpg");
+  //  background-position: 0 -140px;
+  //}
+  //
+  //&--5 {
+  //  background-image: url("../img/service-list-5.jpg");
+  //  background-position: top;
+  //}
+  //
+  //&--6 {
+  //  background-image: url("../img/service-list-6.jpg");
+  //}
+  //
+  //&--7 {
+  //  background-image: url("../img/service-list-7.jpg");
+  //}
+  //
+  //&--8 {
+  //  background-image: url("../img/service-list-8.jpg");
+  //}
+  //
+  //&--9 {
+  //  background-image: url("../img/service-list-9.jpg");
+  //  background-position: 0 -40px;
+  //}
+}
 
-  &--3 {
-    background-image: url("../img/service-list-3.jpg");
-  }
+.service-list__item img {
+  position: relative;
+  min-height: 100%;
+  max-width: 100%;
+  transform: scale(1.12);
+  transition: opacity 0.35s, transform 0.35s;
+}
 
-  &--4 {
-    background-image: url("../img/service-list-4.jpg");
-    background-position: 0 -140px;
-  }
-
-  &--5 {
-    background-image: url("../img/service-list-5.jpg");
-    background-position: top;
-  }
-
-  &--6 {
-    background-image: url("../img/service-list-6.jpg");
-  }
-
-  &--7 {
-    background-image: url("../img/service-list-7.jpg");
-  }
-
-  &--8 {
-    background-image: url("../img/service-list-8.jpg");
-  }
-
-  &--9 {
-    background-image: url("../img/service-list-9.jpg");
-    background-position: 0 -40px;
-  }
+.service-list__item-content {
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+  width: 300px;
+  height: 210px;
 }
 
 .service-list__item-title {
