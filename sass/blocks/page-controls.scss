@@ -1,0 +1,74 @@
+.page-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 382px;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  color: $color-light;
+  border-color: $color-light;
+  border-radius: 50px;
+  border-width: 2px;
+  outline: none;
+  font-size: $font-size-middle;
+  border: none;
+  box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
+
+  &--articles {
+    margin-bottom: 56px;
+  }
+}
+
+.page-controls__control {
+  width: 80px;
+  padding: 0;
+  font-size: $font-size-middle;
+  background: transparent;
+  color: $color-light;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--long {
+    width: 160px;
+  }
+
+  &:hover svg path {
+    fill: $color-bright;
+  }
+
+  &--prew svg {
+    margin-right: 10px;
+    transform: translateY(5px) rotate(180deg);
+  }
+
+  &--next svg {
+    margin-left: 10px;
+    transform: translateY(5px);
+  }
+}
+
+.page-controls__control svg path {
+  fill: $color-dark-gray;
+}
+
+.page-controls__pages {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  list-style: none;
+}
+
+.page-controls__page {
+  cursor: pointer;
+}

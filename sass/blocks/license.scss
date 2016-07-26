@@ -1,0 +1,22 @@
+.license {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 55px;
+}
+
+.license__image {
+  width: 220px;
+  height: 309px;
+  background: url("../img/license.jpg") no-repeat center;
+  border-radius: 30px;
+}
+
+.license__info {
+  width: 640px;
+}
+
+.license__text {
+  width: 450px;
+  margin-bottom: 10px;
+  font-size: $font-size-middle;
+}

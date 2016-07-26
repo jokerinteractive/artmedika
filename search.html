@@ -32,7 +32,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--inner-page"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item  main-nav__item--inner-page"><a href="services.html">Услуги</a>
+            <li class="main-nav__item  main-nav__item--inner-page  main-nav__item--active"><a href="services.html">Услуги</a>
               <ul class="sub-menu">
                 <li><a href="#">Дерматология</a></li>
                 <li><a href="cosmetology.html">Косметология</a></li>
@@ -45,7 +45,7 @@
               </ul>
             </li>
             <li class="main-nav__item  main-nav__item--inner-page"><a href="price.html">Цены</a></li>
-            <li class="main-nav__item  main-nav__item--inner-page  main-nav__item--active"><a>Акции</a></li>
+            <li class="main-nav__item  main-nav__item--inner-page"><a href="promo.html">Акции</a></li>
             <li class="main-nav__item  main-nav__item--inner-page"><a href="about.html">О клинике</a></li>
             <li class="main-nav__item  main-nav__item--inner-page"><a href="reviews.html">Отзывы</a></li>
             <li class="main-nav__item  main-nav__item--inner-page"><a href="articles.html">Статьи</a></li>
@@ -57,67 +57,73 @@
     </header>
     <main>
       <div class="wrapper">
-          <ul class="breadcrumbs">
+          <ul class="breadcrumbs  breadcrumbs--search">
             <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-            <li class="breadcrumbs__item  breadcrumbs__item--active"><a>Акции</a></li>
+            <li class="breadcrumbs__item  breadcrumbs__item--active"><a>Результаты поиска</a></li>
           </ul>
-        <section class="promotion">
-          <div class="promotion__item  promotion__item--big  promotion__slider">
-            <div class="promotion__offer">
-              <h4 class="promotion__offer-title  title  title--h4">Альфа-Пептидный пилинг</h4>
-              <div class="promotion__controls">
-                <button class="promotion__control  promotion__control--prew">
-                  <svg width="10px" height="20px" viewBox="-286 336 88 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path d="M-275,506.2 C-277.6,506.2 -280.1,505.2 -282.1,503.3 C-286,499.4 -286,493.1 -282.1,489.2 L-221.8,428.9 C-219.8,426.9 -218.7,424.2 -218.7,421.3 C-218.7,418.4 -219.8,415.7 -221.8,413.7 L-282.1,353.4 C-286,349.5 -286,343.2 -282.1,339.3 C-278.2,335.4 -271.9,335.4 -268,339.3 L-207.7,399.6 C-201.9,405.4 -198.7,413.1 -198.7,421.3 C-198.7,429.5 -201.9,437.2 -207.7,443 L-268,503.3 C-269.8,505.2 -272.4,506.2 -275,506.2 L-275,506.2 Z" stroke="none" fill="#000000" fill-rule="evenodd"></path>
-                  </svg>
-                </button>
-                <button class="promotion__control  promotion__control--next">
-                  <svg width="10px" height="20px" viewBox="-286 336 88 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path d="M-275,506.2 C-277.6,506.2 -280.1,505.2 -282.1,503.3 C-286,499.4 -286,493.1 -282.1,489.2 L-221.8,428.9 C-219.8,426.9 -218.7,424.2 -218.7,421.3 C-218.7,418.4 -219.8,415.7 -221.8,413.7 L-282.1,353.4 C-286,349.5 -286,343.2 -282.1,339.3 C-278.2,335.4 -271.9,335.4 -268,339.3 L-207.7,399.6 C-201.9,405.4 -198.7,413.1 -198.7,421.3 C-198.7,429.5 -201.9,437.2 -207.7,443 L-268,503.3 C-269.8,505.2 -272.4,506.2 -275,506.2 L-275,506.2 Z" stroke="none" fill="#000000" fill-rule="evenodd"></path>
-                  </svg>
-                </button>
-              </div>
-              <p class="promotion__offer-text">Процедура массажа нравится многим людям. С давних времен с ее помощью
-                лечили различные болезни, внешний вид кожи.</p>
+        <section class="search">
+          <h3 class="search__title  title  title--h3">Результаты поиска: <span class="search__phrase  search__phrase--h3">терапия</span></h3>
+          <div class="search__count">Найдено: 122 результата </div>
+          <div class="search__results">
+            <div class="search__results-item">
+              <ul class="breadcrumbs  breadcrumbs--search">
+                <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs__item  breadcrumbs__item--active"><a href="services.html">Услуги</a></li>
+              </ul>
+              <h4 class="search__results-title">Микротоковая <span class="search__phrase  search__phrase--h4">терапия</span></h4>
+              <p class="search__results-text">В течение всей жизни у нас выпадают волосы, чтобы вырасти вновь. Это
+                цикличная ситуация. Важно не паниковать, увидев на расческе несколько волосков. Это не облысение.
+                В норме человек теряет до ста пятидесяти волос ежедневно. На месте выпавшего волоска должен вырасти
+                новый, что необходимо для поддержания шевелюры.<a class="search__results-url" href="#">Подробнее</a></p>
+            </div>
+            <div class="search__results-item">
+              <ul class="breadcrumbs  breadcrumbs--search">
+                <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs__item  breadcrumbs__item--active"><a href="articles.html">Статьи</a></li>
+              </ul>
+              <h4 class="search__results-title">Причины заболевания волос человека</h4>
+              <p class="search__results-text">В течение всей жизни у нас выпадают волосы, чтобы вырасти вновь. Аппарат
+                для <span class="search__phrase  search__phrase--p">терапии</span> Nemectron Microwelle. Важно не паниковать, увидев на расческе несколько волосков. Это не
+                облысение. В норме человек теряет до ста пятидесяти волос ежедневно. На месте выпавшего волоска должен
+                вырасти новый, что необходимо для поддержания шевелюры.<a class="search__results-url" href="#">Подробнее</a></p>
+            </div>
+            <div class="search__results-item">
+              <ul class="breadcrumbs  breadcrumbs--search">
+                <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="services.html">Услуги</a></li>
+                <li class="breadcrumbs__item"><a href="cosmetology.html">Косметология</a></li>
+                <li class="breadcrumbs__item  breadcrumbs__item--active"><a href="procedure.html">Процедурный кабинет</a></li>
+              </ul>
+              <h4 class="search__results-title">Микротоковая <span class="search__phrase  search__phrase--h4">терапия</span></h4>
+              <p class="search__results-text">В течение всей жизни у нас выпадают волосы, чтобы вырасти вновь. Это
+                цикличная ситуация. Важно не паниковать, увидев на расческе несколько волосков. Это не облысение.
+                В норме человек теряет до ста пятидесяти волос ежедневно. На месте выпавшего волоска должен вырасти
+                новый, что необходимо для поддержания шевелюры.<a class="search__results-url" href="#">Подробнее</a></p>
+            </div>
+            <div class="search__results-item">
+              <ul class="breadcrumbs  breadcrumbs--search">
+                <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs__item  breadcrumbs__item--active"><a href="articles.html">Статьи</a></li>
+              </ul>
+              <h4 class="search__results-title">Причины заболевания волос человека</h4>
+              <p class="search__results-text">В течение всей жизни у нас выпадают волосы, чтобы вырасти вновь. Аппарат
+                для <span class="search__phrase  search__phrase--p">терапии</span> Nemectron Microwelle. Важно не паниковать, увидев на расческе несколько волосков. Это не
+                облысение. В норме человек теряет до ста пятидесяти волос ежедневно. На месте выпавшего волоска должен
+                вырасти новый, что необходимо для поддержания шевелюры.<a class="search__results-url" href="#">Подробнее</a></p>
+            </div>
+            <div class="search__results-item">
+              <ul class="breadcrumbs  breadcrumbs--search">
+                <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs__item  breadcrumbs__item--active"><a href="services.html">Услуги</a></li>
+              </ul>
+              <h4 class="search__results-title">Микротоковая <span class="search__phrase  search__phrase--h4">терапия</span></h4>
+              <p class="search__results-text">В течение всей жизни у нас выпадают волосы, чтобы вырасти вновь. Это
+                цикличная ситуация. Важно не паниковать, увидев на расческе несколько волосков. Это не облысение.
+                В норме человек теряет до ста пятидесяти волос ежедневно. На месте выпавшего волоска должен вырасти
+                новый, что необходимо для поддержания шевелюры.<a class="search__results-url" href="#">Подробнее</a></p>
             </div>
           </div>
-          <div class="promotion__block">
-            <div class="promotion__item  promotion__item--middle">
-              <div class="promotion__item-image"></div>
-              <div class="promotion__item-description">
-                <h4 class="promotion__item-title">Скидка 25 % на инъекции ботулотоксина</h4>
-                <p class="promotion__item-text">При удалении новообразований кожи консультация врача и дерматоскопия бесплатно.</p>
-                <p class="promotion__item-time">с 1.06.2016 по 20.06.2016</p>
-              </div>
-            </div>
-            <div class="promotion__item  promotion__item--middle  promotion__item--poster">
-              <div class="promotion__item-description">
-                <h4 class="promotion__item-title  promotion__item-title--poster">Альфа-Пептидный пилинг</h4>
-                <p class="promotion__item-price">2300 &#8381;</p>
-                <p class="promotion__item-time  promotion__item-time--poster">Акция действует с 1.06.2016 по 20.06.2016</p>
-              </div>
-            </div>
-          </div>
-          <div class="promotion__block">
-            <div class="promotion__item  promotion__item--long">
-              <div class="promotion__item-image"></div>
-              <div class="promotion__item-description  promotion__item-description--long">
-                <h4 class="promotion__item-title">Скидка на классический массаж</h4>
-                <p class="promotion__item-text">Первая процедура классического масссажа со скидкой 50%!. При
-                  прохождении курса массажа десятая процедура в подарок. При удалении доброкачественных новообразований
-                  кожи консультация врача и дерматоскопия бесплатно.</p>
-                <p class="promotion__item-time">с 1.06.2016 по 20.06.2016</p>
-              </div>
-            </div>
-            <div class="promotion__item  promotion__item--small">
-              <div class="promotion__item-description  promotion__item-description--small">
-                <h4 class="promotion__item-title">Скидка на классический массаж</h4>
-                <p class="promotion__item-text">При удалении новообразований кожи консультация врача и дерматоскопия бесплатно.</p>
-                <p class="promotion__item-time">с 1.06.2016 по 20.06.2016</p>
-              </div>
-            </div>
-          </div>
-          <a class="promotion__btn  btn  btn--3" href="#">Показать все акции</a>
+          <a class="search__results-btn  btn  btn--3" href="#">Показать еще</a>
         </section>
       </div>
     </main>
