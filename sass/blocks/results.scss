@@ -83,27 +83,78 @@
 .results__toggle-show-photo {
   display: flex;
   justify-content: space-around;
-  width: 195px;
+  width: 190px;
 }
 
 .results__toggle-show-slide {
   width: 98px;
   height: 28px;
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 15px;
   margin-left: 50px;
   border-radius: 30px;
   box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
 }
 
+.results__show-slide {
+  &:hover svg path {
+    fill: $color-bright;
+  }
+
+  &--prew svg {
+    margin-right: 10px;
+    transform: translateY(5px) rotate(180deg);
+  }
+
+  &--next svg {
+    margin-left: 10px;
+    transform: translateY(5px);
+  }
+}
+
+.results__show-slide svg path {
+  fill: $color-dark-gray;
+}
+
+.results__show-photo svg {
+  transform: translateY(5px);
+}
+
 .results__show-photo {
-  padding-top: 10px;
+  color: $color-light;
+  cursor: pointer;
+
   &--half {
     width: 17px;
     height: 28px;
     border-radius: 30px;
     box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
   }
+
+  &--before svg {
+    transform: translateY(5px) rotate(180deg);
+
+    &:first-child {
+      margin-left: 5px;
+      margin-right: -5px;
+      transform: translateY(5px) scale(0.7) rotate(180deg);
+    }
+  }
+
+  &--after svg:last-child {
+    margin-right: 5px;
+    margin-left: -5px;
+    transform: translateY(5px) scale(0.7);
+  }
 }
 
+.results__show-photo svg path {
+  fill: $color-dark-gray;
+}
 
+.results__separator,
+.results__slide-number,
+.results__slide-total {
+  color: $color-light;
+}

@@ -17,6 +17,12 @@
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center;
+  transition: opacity 0.35s, transform 0.35s;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 3px 16px 0 rgba(28, 30, 31, 0.15);
+  }
 
   &--1 {
     background-image: url("../img/service-list-1.jpg");
@@ -59,13 +65,26 @@
 }
 
 .service-list__item-title {
+  position: relative;
   padding-top: 20px;
   padding-left: 24px;
   height: 45px;
   font-size: $font-size-middle;
   font-weight: $font-weight-normal;
   background: $color-white;
-  color: $color-dark;
+  color: $color-bright;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+
+  &::before {
+    color: $color-dark;
+    content: attr(data-hover);
+    position: absolute;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  &:hover::before {
+    transform: scale(0.9);
+    opacity: 0;
+  }
 }

@@ -12,7 +12,13 @@
   border: 2px solid $color-gray-1;
   cursor: pointer;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out 0s;
 
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0 3px 16px 0 rgba(28, 30, 31, 0.15);
+    transform: translateY(-10px);
+  }
 
   &--big {
     position: relative;
@@ -21,6 +27,10 @@
     margin-bottom: 20px;
     background: url("../img/promo-image-big.jpg") no-repeat -240px -150px;
     border: none;
+
+    &:hover {
+      transform: translateY(0);
+    }
   }
 
   &--middle {
@@ -37,11 +47,6 @@
 
   &--small {
     width: 220px;
-  }
-
-  &:hover {
-    border-color: transparent;
-    box-shadow: 0 3px 16px 0 rgba(28, 30, 31, 0.15);
   }
 }
 
@@ -68,6 +73,21 @@
 
 .promotion__offer-title {
   margin-bottom: 10px;
+  font-size: $font-size-smaller-big;
+  font-weight: $font-weight-bold;
+  color: $color-bright;
+
+  &::before {
+    color: $color-pastel;
+    content: attr(data-hover);
+    position: absolute;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+}
+
+.promotion__offer:hover .promotion__offer-title::before {
+  transform: scale(0.9);
+  opacity: 0;
 }
 
 .promotion__offer-text {
@@ -130,9 +150,17 @@
 }
 
 .promotion__item-title {
+  position: relative;
   font-size: $font-size-bigger-middle;
   font-weight: $font-weight-bold;
-  color: $color-dark;
+  color: $color-bright;
+
+  &::before {
+    color: $color-dark;
+    content: attr(data-hover);
+    position: absolute;
+    transition: transform 0.3s, opacity 0.3s;
+  }
 
   &:hover {
     color: $color-bright;
@@ -143,6 +171,11 @@
     font-weight: $font-weight-normal;
     color: $color-light;
   }
+}
+
+.promotion__item-title:hover::before {
+  transform: scale(0.9);
+  opacity: 0;
 }
 
 .promotion__item-text {
