@@ -54,6 +54,11 @@
   margin-left: 20px;
   font-size: $font-size-small;
   color: $color-dark-gray;
+
+  &:hover,
+  &:active {
+    color: $color-light;
+  }
 }
 
 .search__results-btn {
