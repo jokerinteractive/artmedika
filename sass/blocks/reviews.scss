@@ -41,10 +41,10 @@
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 12px;
+  font-size: $font-size-middle;
   line-height: 18px;
   background: $color-gray;
-  color: $color-dark-gray;
+  color: $color-darker;
   border: 1px solid $color-gray-1;
   outline: none;
   box-sizing: border-box;
@@ -63,6 +63,24 @@
     background: transparent;
     border-color: $color-bright-red;
   }
+}
+
+.reviews__input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: $color-dark-gray;
+}
+.reviews__input::-moz-placeholder {
+  font-size: 12px;
+  color: $color-dark-gray;
+}
+.reviews__input:-moz-placeholder {
+  font-size: 12px;
+  color: $color-dark-gray;
+}
+
+.reviews__input:-ms-input-placeholder {
+  font-size: 12px;
+  color: $color-dark-gray;
 }
 
 .reviews__btn {
@@ -87,6 +105,7 @@
 .reviews__date {
   font-size: $font-size-small;
   line-height: 18px;
+  letter-spacing: normal;
   color: $color-light;
 }
 
