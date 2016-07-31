@@ -74,6 +74,10 @@
   transform: translateY(3px);
 }
 
+.page-footer__contacts svg path {
+  fill: $color-gray-4;
+}
+
 .page-footer__phone,
 .page-footer__mail {
   width: 240px;

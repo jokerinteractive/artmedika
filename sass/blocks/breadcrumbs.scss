@@ -13,6 +13,10 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
+
+  &:hover a {
+    color: $color-light;
+  }
 }
 
 .breadcrumbs__item a {

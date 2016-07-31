@@ -6,13 +6,10 @@
   margin-left: 10px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid red;
+  border-top: 5px solid black;
 
   &--active {
+    border-top: 5px solid red;
     transform: rotate(180deg);
-  }
-
-  &--black {
-    border-top: 5px solid black;
   }
 }

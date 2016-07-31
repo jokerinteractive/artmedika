@@ -34,11 +34,11 @@
   }
 
   &:hover .services__item-url {
-    color: $color-bright;
+    color: $color-red;
   }
 
   &:hover svg path {
-    fill: $color-bright;
+    fill: $color-red;
   }
 }
 
