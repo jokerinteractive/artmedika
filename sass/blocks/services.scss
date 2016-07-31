@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  //justify-content: space-between;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -25,19 +24,44 @@
   border: 1px solid $color-dark;
   border-radius: 100px;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0 3px 16px 0 rgba(28, 30, 31, 0.15);
+    transform: translateY(-10px);
+  }
+
+  &:hover .services__item-url {
+    color: $color-red;
+  }
+
+  &:hover svg path {
+    fill: $color-red;
+  }
 }
 
 .services__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.services__item a {
-  display: block;
-  width: 100px;
-  padding-top: 45px;
-  //padding-bottom: 50px;
-  padding-left: 150px;
+.services__item-url {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
   font-size: $font-size-middle;
   text-decoration: none;
   color: $color-dark;
+}
+
+.services__item svg {
+  width: 85px;
+  height: 85px;
+  transform: translate(-10px, 12px);
+}
+
+.services__item-name {
+  align-self: center;
+  width: 120px;
 }

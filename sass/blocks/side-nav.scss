@@ -1,0 +1,124 @@
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 995px;
+  padding-top: 27px;
+  letter-spacing: normal;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
+  border: 2px solid $color-gray;
+}
+
+.side-nav__title {
+  margin-bottom: 20px;
+  font-size: $font-size-bigger-middle;
+  font-weight: $font-weight-bold;
+  text-align: center;
+}
+
+.side-nav__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  font-size: $font-size-small;
+  color: $color-darker;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-light;
+    text-decoration: underline;
+  }
+}
+
+.side-nav__icon {
+  width: 50px;
+  height: 18px;
+  padding-left: 20px;
+  background: $color-bright;
+  color: $color-white;
+  box-sizing: border-box;
+}
+
+.side-nav__image {
+  width: 28px;
+  height: 28px;
+  margin-left: 14px;
+  border-radius: 50%;
+  background: url("../img/aside.jpg") no-repeat center;
+}
+
+.side-nav__text {
+  width: 139px;
+}
+
+.side-nav__activities {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  border-top: 3px solid $color-gray-3;
+}
+
+.side-nav__activities .side-nav__text {
+  padding-left: 40px;
+}
+
+.side-nav__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 135px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.side-nav__social-link {
+  display: block;
+  width: 61px;
+  height: 61px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $color-dark-gray;
+  }
+
+  &--vk {
+    background-color: $color-vk;
+  }
+
+  &--vk svg {
+    transform: translate(20px, 20px);
+  }
+
+  &--vk svg path {
+    fill: $color-white;
+  }
+
+  &--fb {
+    background-color: $color-fb;
+  }
+
+  &--fb svg {
+    transform: translate(22px, 22px);
+  }
+
+  &--gplus {
+    background-color: $color-gmail;
+  }
+
+  &--gplus svg {
+    transform: translate(22px, 20px);
+  }
+
+  &--tw {
+    background-color: $color-tw;
+  }
+
+  &--tw svg {
+    transform: translate(23px, 23px);
+  }
+}

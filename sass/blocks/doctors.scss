@@ -1,0 +1,76 @@
+.doctors__title {
+  margin-bottom: 39px;
+}
+
+.doctors__list {
+  padding-bottom: 62px;
+}
+
+.doctors__card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid $color-gray;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
+
+  &:hover {
+    //border-color: transparent;
+    //box-shadow: 0 3px 16px 0 rgba(28, 30, 31, 0.15);
+    //transform: translateY(-10px);
+  }
+}
+
+.doctors__photo {
+  width: 155px;
+  height: 155px;
+  background: url("../img/doctor-1.jpg") no-repeat 0 0;
+  border-radius: 20px;
+}
+
+.doctors__card:nth-child(2n) .doctors__photo {
+  background: url("../img/doctor-2.jpg") no-repeat -90px -10px;
+}
+
+.doctors__personality {
+  width: 300px;
+}
+
+.doctors__name {
+  margin-bottom: 25px;
+  font-size: $font-size-smaller-big;
+  font-weight: $font-weight-bold;
+  color: $color-dark;
+}
+
+.doctors__qualification {
+  font-size: $font-size-middle;
+  line-height: 18px;
+  color: $color-pastel;
+}
+
+.doctors__certificates {
+  width: 354px;
+  margin-top: -17px;
+  margin-bottom: -17px;
+  margin-right: -17px;
+  padding-left: 50px;
+  padding-top: 37px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: $color-gray;
+  box-sizing: border-box;
+}
+
+.doctors__certificates-item {
+  margin-bottom: 10px;
+}
+
+.doctors__btn {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}

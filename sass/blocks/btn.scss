@@ -1,11 +1,13 @@
 .btn {
   display: block;
-  width: 188px;
-  padding: 8px 20px;
+  width: 193px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   margin-bottom: 12px;
   box-sizing: border-box;
   font-size: $font-size-normal;
   text-decoration: none;
+  text-align: center;
   color: $color-light;
   border-color: $color-light;
   border-radius: 50px;
@@ -13,12 +15,58 @@
   border-width: 2px;
   outline: none;
   transition: .3s;
+  cursor: pointer;
+
+  &--1 {
+    font-weight: $font-weight-bold;
+    color: $color-bright;
+    border-color: $color-bright;
+  }
 
   &:hover {
     font-weight: $font-weight-bold;
     background-color: $color-bright;
     color: $color-white;
     border-color: $color-bright;
+  }
+
+  &--2 {
+    background-color: transparent;
+  }
+
+  &--2:hover {
+    font-weight: $font-weight-normal;
+    background-color: transparent;
+    color: $color-bright;
+    border-color: $color-bright;
+  }
+
+  &--4 {
+    background-color: transparent;
+    color: $color-light;
+    border-color: $color-dark-gray;
+  }
+
+  &--4:hover {
+    font-weight: $font-weight-normal;
+    background-color: transparent;
+    color: $color-bright;
+    border-color: $color-bright;
+  }
+
+  &--3 {
+    font-size: $font-size-middle;
+    border-color: $color-gray;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
+
+    &:hover {
+      font-weight: $font-weight-normal;
+      background: $color-gray;
+      color: $color-light;
+      border-color: $color-gray;
+    }
   }
 
   &--vk {
@@ -31,7 +79,36 @@
     border-style: solid;
     border-width: 2px;
     outline: none;
-    text-indent: 100%;
+    //text-indent: 100%;
     overflow: hidden;
+
+    &:hover svg path {
+      fill: $color-white;
+    }
+  }
+
+  &--vk svg {
+    width: 100%;
+    transform: translateY(6px);
+  }
+
+  &--vk svg path {
+    fill: $color-dark;
+  }
+
+  &--error {
+    font-weight: $font-weight-bold;
+  }
+
+  &--error svg {
+    transform: translate(7px, 3px);
+  }
+
+  &--error svg path {
+    fill: $color-bright;
+  }
+
+  &--error:hover svg path {
+    fill: $color-white;
   }
 }

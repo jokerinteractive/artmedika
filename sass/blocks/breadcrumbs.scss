@@ -3,12 +3,20 @@
   margin-bottom: 35px;
   padding: 0;
   list-style: none;
+
+  &--search {
+    margin-bottom: 10px;
+  }
 }
 
 .breadcrumbs__item {
   position: relative;
   display: inline-block;
   vertical-align: top;
+
+  &:hover a {
+    color: $color-light;
+  }
 }
 
 .breadcrumbs__item a {
@@ -22,9 +30,14 @@
 }
 
 .breadcrumbs__item a::after {
-  content: "»";
+  content: "";
   position: absolute;
   right: 3px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  background: url("../img/icons/arrow-breadcrumbs.svg") no-repeat center;
+  opacity: 0.3;
 }
 
 .breadcrumbs__item--active a::after {
