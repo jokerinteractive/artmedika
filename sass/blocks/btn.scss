@@ -17,28 +17,28 @@
   transition: .3s;
   cursor: pointer;
 
-  &--1 {
+  &--red {
     font-weight: $font-weight-bold;
     color: $color-bright;
     border-color: $color-bright;
   }
 
-  &:hover {
+  &--red:hover {
     font-weight: $font-weight-bold;
     background-color: $color-bright;
     color: $color-white;
     border-color: $color-bright;
   }
 
-  &--2 {
+  &--grey {
     background-color: transparent;
   }
 
-  &--2:hover {
-    font-weight: $font-weight-normal;
-    background-color: transparent;
-    color: $color-bright;
-    border-color: $color-bright;
+  &--grey:hover {
+    font-weight: $font-weight-bold;
+    background-color: $color-light;
+    color: $color-white;
+    border-color: $color-light;
   }
 
   &--4 {

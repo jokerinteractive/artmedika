@@ -46,18 +46,9 @@
   font-size: $font-size-big;
   font-weight: $font-weight-bold;
   color: $color-bright;
-
-  &::before {
-    color: $color-pastel;
-    content: attr(data-hover);
-    position: absolute;
-    margin-right: 40px;
-    transition: transform 0.3s, opacity 0.3s;
-  }
 }
 
 .promo__description {
-  display: none;
   position: absolute;
   top: 141px;
   left: 380px;
@@ -68,15 +59,6 @@
   padding-right: 52px;
   background: $color-white;
   border-radius: 30px;
-}
-
-.promo__item:hover .promo__description {
-  display: block;
-}
-
-.promo__item:hover .promo__offer::before {
-  transform: scale(0.9);
-  opacity: 0;
 }
 
 .promo__description svg {
