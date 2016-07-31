@@ -28,6 +28,21 @@
   color: $color-white;
   text-align: center;
   display: inline-block;
+  position: relative;
+
+  &:hover::before {
+    left: 7px;
+    width: 108px;
+    height: 108px;
+    content: "";
+    border: 3px solid transparentize($color-bright, .3);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: 3px;
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0,0,0,.15), inset 0 0 10px rgba(0,0,0,.15);
+  }
 }
 
 .main-services__item svg {
@@ -40,13 +55,7 @@
 .main-services__item svg path {
   fill: #fff;
   stroke: white;
-  stroke-width: 1px;
-  transition: .3s;
-}
-
-.main-services__item:hover svg path {
-  fill: red;
-  stroke: red;
+  stroke-width: 3px;
 }
 /* end testing SVG */
 
