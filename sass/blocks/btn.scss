@@ -17,28 +17,28 @@
   transition: .3s;
   cursor: pointer;
 
-  &--1 {
+  &--red {
     font-weight: $font-weight-bold;
     color: $color-bright;
     border-color: $color-bright;
   }
 
-  &:hover {
+  &--red:hover {
     font-weight: $font-weight-bold;
     background-color: $color-bright;
     color: $color-white;
     border-color: $color-bright;
   }
 
-  &--2 {
+  &--grey {
     background-color: transparent;
   }
 
-  &--2:hover {
-    font-weight: $font-weight-normal;
-    background-color: transparent;
-    color: $color-bright;
-    border-color: $color-bright;
+  &--grey:hover {
+    font-weight: $font-weight-bold;
+    background-color: $color-light;
+    color: $color-white;
+    border-color: $color-light;
   }
 
   &--4 {
@@ -71,8 +71,8 @@
 
   &--vk {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     padding: 0;
     text-decoration: none;
     border-radius: 50%;
@@ -82,14 +82,17 @@
     //text-indent: 100%;
     overflow: hidden;
 
-    &:hover svg path {
-      fill: $color-white;
+    &:hover {
+      background-color: $color-light;
+      svg path {
+        fill: $color-white;
+      }
     }
   }
 
   &--vk svg {
     width: 100%;
-    transform: translateY(6px);
+    transform: translateY(9px);
   }
 
   &--vk svg path {

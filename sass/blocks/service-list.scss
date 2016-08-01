@@ -72,8 +72,8 @@
   position: relative;
   min-height: 100%;
   max-width: 100%;
-  transform: scale(1.12);
-  transition: opacity 0.35s, transform 0.35s;
+  border-radius: 30px;
+  transition: opacity 0.35s;
 }
 
 .service-list__item-content {

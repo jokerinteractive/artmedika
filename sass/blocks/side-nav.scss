@@ -27,7 +27,7 @@
   color: $color-darker;
   text-decoration: none;
 
-  &:hover {
+  &:hover .side-nav__text {
     color: $color-light;
     text-decoration: underline;
   }

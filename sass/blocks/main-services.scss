@@ -28,6 +28,21 @@
   color: $color-white;
   text-align: center;
   display: inline-block;
+  position: relative;
+
+  &:hover::before {
+    left: 7px;
+    width: 108px;
+    height: 108px;
+    content: "";
+    border: 3px solid transparentize($color-bright, .3);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: 3px;
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0,0,0,.15), inset 0 0 10px rgba(0,0,0,.15);
+  }
 }
 
 .main-services__item svg {
@@ -40,13 +55,7 @@
 .main-services__item svg path {
   fill: #fff;
   stroke: white;
-  stroke-width: 1px;
-  transition: .3s;
-}
-
-.main-services__item:hover svg path {
-  fill: red;
-  stroke: red;
+  stroke-width: 3px;
 }
 /* end testing SVG */
 
@@ -70,10 +79,11 @@
   padding: 0;
   background: $color-white-transparent;
   border-radius: 50%;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .1);
   border: 0;
   outline: none;
   cursor: pointer;
+  transition: .3s;
 
   &--next {
     margin-bottom: 15px;
@@ -84,8 +94,21 @@
     margin-left: 2px;
   }
 
-  &--next svg path {
-    fill: $color-bright;
+  &--next,
+  &--prew {
+    svg path {
+      fill: $color-white;
+    }
+    &:hover {
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .35);
+      transition: .1s;
+      svg path {
+        fill: $color-bright;
+      }
+    }
+    &:active {
+      box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, .15);
+    }
   }
 
   &--prew svg {
@@ -95,7 +118,6 @@
   }
 
   &--prew svg path {
-    fill: $color-white;
   }
 }
 
