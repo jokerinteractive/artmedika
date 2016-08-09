@@ -92,19 +92,23 @@
   font-size: $font-size-middle;
   font-weight: $font-weight-normal;
   background: $color-white;
-  color: $color-bright;
+  color: $color-dark;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
 
-  &::before {
-    color: $color-dark;
-    content: attr(data-hover);
-    position: absolute;
-    transition: transform 0.3s, opacity 0.3s;
+  &:hover {
+    color: $color-bright;
   }
 
-  &:hover::before {
-    transform: scale(0.9);
-    opacity: 0;
-  }
+  //&::before {
+  //  color: $color-dark;
+  //  content: attr(data-hover);
+  //  position: absolute;
+  //  transition: transform 0.3s, opacity 0.3s;
+  //}
+
+  //&:hover::before {
+  //  transform: scale(0.9);
+  //  opacity: 0;
+  //}
 }

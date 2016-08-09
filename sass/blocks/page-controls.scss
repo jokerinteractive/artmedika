@@ -1,7 +1,7 @@
 .page-controls {
   display: flex;
   justify-content: space-between;
-  width: 390px;
+  width: 420px;
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
@@ -15,7 +15,8 @@
   outline: none;
   font-size: $font-size-middle;
   border: none;
-  box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
+  //box-shadow: 0 0 7.84px 0.16px rgba(51, 51, 51, 0.07);
+  box-shadow: 0 0 7.84px 0.16px rgba(236, 236, 236, 1);
 
   &--articles {
     margin-bottom: 56px;
@@ -58,6 +59,7 @@
   }
 
   &--prew {
+    margin-right: 10px;
     padding-right: 25px;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
@@ -69,6 +71,7 @@
   }
 
   &--next {
+    margin-left: 15px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
   }

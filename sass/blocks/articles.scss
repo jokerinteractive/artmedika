@@ -165,6 +165,7 @@
   color: $color-white;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  letter-spacing: $letter-spacing-mini;
 
   &--hidden {
     padding: 0;
@@ -187,9 +188,11 @@
 .articles__item-date {
   align-self: flex-end;
   font-size: $font-size-small;
+  letter-spacing: $letter-spacing-mini;
   margin-bottom: 5px;
 }
 
 .articles__item-text {
   font-size: $font-size-small;
+  letter-spacing: $letter-spacing-mini;
 }

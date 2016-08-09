@@ -12,16 +12,10 @@
   width: 100%;
   margin-bottom: 15px;
   padding: 15px;
-  border: 2px solid $color-gray;
+  //border: 2px solid $color-gray;
+  box-shadow: 0 0 7.84px 0.16px rgba(236, 236, 236, 1);
   border-radius: 30px;
-  cursor: pointer;
   transition: all 0.2s ease-in-out 0s;
-
-  &:hover {
-    //border-color: transparent;
-    //box-shadow: 0 3px 16px 0 rgba(28, 30, 31, 0.15);
-    //transform: translateY(-10px);
-  }
 }
 
 .doctors__photo {
