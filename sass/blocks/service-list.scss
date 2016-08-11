@@ -99,16 +99,4 @@
   &:hover {
     color: $color-bright;
   }
-
-  //&::before {
-  //  color: $color-dark;
-  //  content: attr(data-hover);
-  //  position: absolute;
-  //  transition: transform 0.3s, opacity 0.3s;
-  //}
-
-  //&:hover::before {
-  //  transform: scale(0.9);
-  //  opacity: 0;
-  //}
 }

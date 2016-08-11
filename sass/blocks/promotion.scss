@@ -76,13 +76,10 @@
   margin-bottom: 10px;
   font-size: $font-size-smaller-big;
   font-weight: $font-weight-bold;
-  color: $color-bright;
+  color: $color-pastel;
 
-  &::before {
-    color: $color-pastel;
-    content: attr(data-hover);
-    position: absolute;
-    transition: transform 0.3s, opacity 0.3s;
+  &:hover {
+    color: $color-bright;
   }
 }
 
@@ -154,14 +151,7 @@
   position: relative;
   font-size: $font-size-bigger-middle;
   font-weight: $font-weight-bold;
-  color: $color-bright;
-
-  &::before {
-    color: $color-dark;
-    content: attr(data-hover);
-    position: absolute;
-    transition: transform 0.3s, opacity 0.3s;
-  }
+  color: $color-dark;
 
   &:hover {
     color: $color-bright;
