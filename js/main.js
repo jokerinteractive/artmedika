@@ -117,3 +117,81 @@ window.addEventListener("keydown", function(event) {
 		}
 	}
 });
+
+if (document.getElementsByClassName("results__item")) {
+  $(".results__item").twentytwenty();
+
+$('.results__show-photo--before').on('click', function(event) {
+  event.preventDefault();
+  var slider = $('.results__slider'),
+      activeSlide = $('.results__list--active'),
+      handle = activeSlide.find('.twentytwenty-handle'),
+      leftImg = activeSlide.find('.twentytwenty-before'),
+      leftPos = handle.css("left"),
+      newPos = Number(leftPos.slice(0, -2)) - 5 + 'px';
+
+  handle.css('left', newPos);
+  leftImg.css('clip', 'rect(0px '+ newPos + ' 300px 0px)');
+});
+
+$('.results__show-photo--after').on('click', function(event) {
+  event.preventDefault();
+  var slider = $('.results__slider'),
+      activeSlide = $('.results__list--active'),
+      handle = activeSlide.find('.twentytwenty-handle'),
+      leftImg = activeSlide.find('.twentytwenty-before'),
+      leftPos = handle.css("left"),
+      newPos = Number(leftPos.slice(0, -2)) + 5 + 'px';
+
+  handle.css('left', newPos);
+  leftImg.css('clip', 'rect(0px '+ newPos + ' 300px 0px)');
+});
+};
+
+if (document.getElementsByClassName("results__slider")) {
+  $('.results__show-slide--prew').on('click', function(event) {
+    event.preventDefault();
+
+    var slider = $('.results__slider'),
+        slidesWrap = slider.find('.results__wrap'),
+        slides = slidesWrap.find('results__list'),
+        activeSlide = slidesWrap.find('.results__list--active'),
+        slideNumber = Number(slider.find('.results__slide-number').text()),
+        slideMax = Number(slider.find('.results__slide-total').text());
+
+    if (slideNumber === 1) {
+      return;
+    }
+
+    else {
+      slider.find('.results__slide-number').html(slideNumber - 1);
+      activeSlide.fadeOut('400', function() {
+        activeSlide.removeClass('results__list--active').prev('.results__list').addClass('results__list--active').fadeIn('400');
+      });
+    }
+  });
+  $('.results__show-slide--next').on('click', function(event) {
+    event.preventDefault();
+
+    var slider = $('.results__slider'),
+        slidesWrap = slider.find('.results__wrap'),
+        slides = slidesWrap.find('results__list'),
+        activeSlide = slidesWrap.find('.results__list--active'),
+        slideNumber = Number(slider.find('.results__slide-number').text()),
+        slideMax = Number(slider.find('.results__slide-total').text());
+
+    if (slideNumber === slideMax) {
+      return;
+    }
+
+    else {
+      slider.find('.results__slide-number').html(slideNumber + 1);
+      activeSlide.fadeOut('400', function() {
+        activeSlide.removeClass('results__list--active')
+        .next('.results__list')
+        .addClass('results__list--active').fadeIn('400');
+      });
+    }
+  });
+};
+
