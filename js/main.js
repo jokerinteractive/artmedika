@@ -194,4 +194,3 @@ if (document.getElementsByClassName("results__slider")) {
     }
   });
 };
-
